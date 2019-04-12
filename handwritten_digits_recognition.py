@@ -57,5 +57,5 @@ while os.path.isfile('digits/digit{}.png'.format(image_number)):
         plt.show()
         image_number += 1
     except:
-        print("Error reading image!")
-        break
+        print("Error reading image! Proceeding with next image...")
+        image_number += 1
